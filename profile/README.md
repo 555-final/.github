@@ -19,5 +19,6 @@ Indexer: Indexer.java, HTMLFileInput.java, DocMapper.java, DocReducer.java, TFID
 PageRank: SparkSetup.java, PageRank.java  
 
 #### To Run
-Indexer, Crawler, PageRank, WebServer - the files can be installed as a Java Maven project and run accordingly
+Indexer, Crawler, WebServer - the files can be installed as a Java Maven project and run accordingly
+PageRank - uses emr-dynamo-db connector which must be run on an EMR cluster. To run our experiment with broadcast joins which did not scale, checkout the `try-collect-as-map` branch
 Web Interface - run like any othe react project (e.g., npm run build)
